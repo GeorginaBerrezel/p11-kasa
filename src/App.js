@@ -1,41 +1,9 @@
-// import React, { useState, useEffect } from 'react';
-
-// function App() {
-//   const [data, setData] = useState([]);
-
-//   useEffect(() => {
-//     fetch('logements.json')
-//       .then(response => response.json())
-//       .then(data => setData(data))
-//       .catch(error => console.log(error));
-//   }, []);
-
-//   return (
-//         <div>
-//           <h1>Liste des logements :</h1>
-//           <ul>
-//             {data.map(logement => (
-//               <li key={logement.id}>{logement.title}</li>
-//               // créer un composants
-//               // props les info
-//               // gerer les roots
-//               // nouvelle page logement
-//               // composant header
-//               // composant footer
-//             ))}
-//           </ul>
-//         </div>
-//       );
-// }
-
-// export default App;
-
-
 import React from 'react';
-import Accommodation from './Accomodation'; // Importez le composant
+import Accommodation from './Accomodation';
+import Header from './Header';
+import SectionHome from './Sectionhome'; // Import du composant SectionHome
 
 const App = () => {
-  // Exemple de données JSON
   const jsonData = [
     {
       "id": "c67ab8a7",
@@ -54,6 +22,8 @@ const App = () => {
 
   return (
     <div>
+      <Header /> {/* Ajout du composant Header */}
+      <SectionHome /> {/* Ajout du composant SectionHome */}
       {jsonData.map((accommodation) => (
         <Accommodation
           key={accommodation.id}
