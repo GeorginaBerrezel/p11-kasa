@@ -1,9 +1,9 @@
 import React from "react";
 function Thumbnail(props) {
-    const { title, cover } = props;
+    const { title, cover, onClick } = props;
 
   return (
-    <div className="thumbnail" >
+    <div className="thumbnail" onClick={onClick}>
       <img src={cover} alt={title} />
       <h2 className="thumbnail-title">{title}</h2>
     </div>
