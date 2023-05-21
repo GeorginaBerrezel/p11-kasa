@@ -19,7 +19,8 @@ code {
   gap: 10px;
   justify-items: center;
   background-color:#F6F6F6;
-  padding: 20px;
+  padding: 4rem;
+  margin: 4rem;
   border-radius: 25px;
 }
 
