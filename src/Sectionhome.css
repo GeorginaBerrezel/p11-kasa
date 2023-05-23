@@ -1,25 +1,2 @@
-.section-home {
-    border-radius: 25px;
-    background-image: url("./section-home.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 100px;
-    top: 171px;
-    margin: 4rem;
-    height: 223px;
-    width: auto;
-  }
-  
-  .section-content {
-    text-align: center;
-  }
-  
-  .section-content h1 {
-    color: #ffffff;
-    font-size: 24px;
-  }
+
   

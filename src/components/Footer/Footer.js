@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './kasa-logo-white.svg';
+import logo from '../../assets/svg/kasa-logo-white.svg';
 import './Footer.css';
 
 const Footer = () => {
