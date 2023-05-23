@@ -1,5 +1,6 @@
 import React from 'react';
-import './Accommodation.css';
+// import './style.css';
+import'../accommodation/style.css';
 
 const Accommodation = ({ title, cover, pictures }) => {
   return (
