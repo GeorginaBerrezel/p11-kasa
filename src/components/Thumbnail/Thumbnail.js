@@ -1,4 +1,6 @@
 import React from "react";
+import './style.css';
+
 function Thumbnail(props) {
     const { title, cover, onClick } = props;
 
