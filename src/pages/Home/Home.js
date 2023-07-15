@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import './style.css';
+import "./style.css";
 import Thumbnail from "../../components/Thumbnail/Thumbnail";
-import Accommodation from "../../components/Accommodation/Accommodation";
+import Accommodation from "../Accommodation/Accommodation";
 import jsonData from "../../logements.json";
 
 export default function Home() {
@@ -21,16 +21,18 @@ export default function Home() {
   };
 
   return (
-    <div className="section-home">
-      <div className="section-content">
-        <h1>Chez vous, partout et ailleurs</h1>
+    <div>
+      <div className="section-home">
+        <div className="section-content">
+          <h1>Chez vous, partout et ailleurs</h1>
+        </div>
       </div>
       <div className="gallery-row">
-        {selectedAccommodationId ? (
-          <Accommodation id={selectedAccommodationId} />
-        ) : (
-          getGalleryItems()
-        )}
+          {selectedAccommodationId ? (
+            <Accommodation id={selectedAccommodationId} />
+          ) : (
+            getGalleryItems()
+          )}
       </div>
     </div>
   );
