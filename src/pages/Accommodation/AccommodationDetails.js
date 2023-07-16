@@ -1,7 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-import Thumbnail from "../../components/Thumbnail/Thumbnail";
+// import Thumbnail from "../../components/Thumbnail/Thumbnail";
+import Gallery from "../../components/Gallery/Gallery";
 import jsonData from "../../logements.json";
 
 const AccommodationDetails = () => {
@@ -11,12 +12,16 @@ const AccommodationDetails = () => {
   if (!accommodation) {
     return <div>Aucun hébergement trouvé pour cet ID</div>;
   } else {
+    const { pictures } = accommodation; // Déplacer cette ligne ici
+
     return (
-      <Thumbnail
-        id={accommodation.id}
-        title={accommodation.title}
-        cover={accommodation.cover}
-      />
+      <Gallery pictures={pictures} />
+
+      // <Thumbnail
+      //   id={accommodation.id}
+      //   title={accommodation.title}
+      //   cover={accommodation.cover}
+      // />
     );
   }
 };
