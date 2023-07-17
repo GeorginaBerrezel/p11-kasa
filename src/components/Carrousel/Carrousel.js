@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 
-function Gallery(props) {
+function Carrousel(props) {
   const { pictures } = props;
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -18,17 +18,18 @@ function Gallery(props) {
   const totalImages = pictures.length;
 
   return (
-    <div className="gallery">
-      <button className="prev" onClick={prevImage}>
-        &lt;
+    <div className="carrousel
+    ">
+      <button className="arrow-button prev" onClick={prevImage}>
+        <i className="fas fa-chevron-left"></i>
       </button>
       <img src={pictures[currentIndex]} alt={`Image ${currentImageNumber}/${totalImages}`} />
-      <button className="next" onClick={nextImage}>
-        &gt;
+      <button className="arrow-button next" onClick={nextImage}>
+        <i className="fas fa-chevron-right"></i>
       </button>
       <p className="image-count">{`${currentImageNumber}/${totalImages}`}</p>
     </div>
   );
 }
 
-export default Gallery;
+export default Carrousel;
