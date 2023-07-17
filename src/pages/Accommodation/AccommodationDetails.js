@@ -1,9 +1,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-// import Thumbnail from "../../components/Thumbnail/Thumbnail";
-import Gallery from "../../components/Gallery/Gallery";
+import Carrousel from "../../components/Carrousel/Carrousel";
 import jsonData from "../../logements.json";
+import Sheet from "../../components/Sheet/Sheet";
 
 const AccommodationDetails = () => {
   const { id } = useParams();
@@ -15,13 +15,10 @@ const AccommodationDetails = () => {
     const { pictures } = accommodation; // Déplacer cette ligne ici
 
     return (
-      <Gallery pictures={pictures} />
-
-      // <Thumbnail
-      //   id={accommodation.id}
-      //   title={accommodation.title}
-      //   cover={accommodation.cover}
-      // />
+      <div>
+        <Carrousel pictures={pictures} />
+        <Sheet accommodation={accommodation} />
+      </div>
     );
   }
 };
