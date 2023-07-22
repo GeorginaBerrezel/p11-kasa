@@ -27,3 +27,8 @@ header {
     text-decoration: none;
   }
   
+  .active-link {
+    text-decoration: underline;
+    color: #FF6060;
+  }
+  

@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom'; // Importer NavLink au lieu de a
 import logo from '../../assets/svg/kasa-logo.svg';
 import './Header.css';
 
@@ -9,13 +10,13 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <a href="/">Accueil</a>
+            <NavLink exact to="/" activeClassName="active-link">Accueil</NavLink>
           </li>
           <li>
-            <a href="/a-propos">À propos</a>
+            <NavLink to="/a-propos" activeClassName="active-link">À propos</NavLink>
           </li>
           <li>
-            <a href="/test">Test</a>
+            <NavLink to="/test" activeClassName="active-link">Test</NavLink>
           </li>
         </ul>
       </nav>
