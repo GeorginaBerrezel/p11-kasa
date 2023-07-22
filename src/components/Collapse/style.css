@@ -34,6 +34,15 @@
     margin-top: -1px;
   }
 
+  /* COLLAPSES pour la page à propose */
+  .collapses-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pour centrer les collapse horizontalement */
+    margin: 0 12rem 3rem 12rem;
+  }
+  
+
   .collapse-content ul {
     list-style: none;
   }
