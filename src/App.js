@@ -9,7 +9,7 @@ import About from "../src/pages/About/About";
 import Test from "../src/pages/Test/Test";
 import Accommodation from "./pages/Accommodation/Accommodation";
 import AccommodationDetails from "./pages/Accommodation/AccommodationDetails";
-import "./pages/Accommodation/style.css";
+import Error404 from "./pages/Error/404"; // Importez correctement votre composant Error404
 import jsonData from "./logements.json";
 
 const App = () => {
@@ -50,6 +50,9 @@ const App = () => {
           />
 
           <Route path="/accommodation/:id" element={<AccommodationDetails />} />
+
+          {/* Ajouter la route pour la page 404 */}
+          <Route path="*" element={<Error404 />} />
         </Routes>
 
         <Footer />

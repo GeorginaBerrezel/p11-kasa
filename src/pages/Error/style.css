@@ -1,0 +1,41 @@
+.error-404 {
+    text-align: center;
+    margin: 0 4rem 3rem 4rem;
+  }
+  
+  .error-404 h1 {
+    color: #FF6060;
+    text-align: center;
+    font-size: 288px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 142.6%; /* 410.688px */
+    margin: 0;
+  }
+  
+  .error-404 p {
+    color: #FF6060;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 51.336px */
+    margin-bottom: 10rem;
+  }
+  
+  .return-home-link {
+    display: block;
+    margin-top: 20px;
+    text-decoration: underline;
+    color: #FF6060;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 25.668px */
+    text-decoration-line: underline;
+    margin-bottom: 10rem;
+  }
+  
+  .return-home-link:hover {
+    color: #ff6060; /* Couleur bleue plus sombre au survol */
+  }
+  
