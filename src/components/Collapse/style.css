@@ -1,58 +1,95 @@
-.collapses {
-    margin: 0 4rem 3rem 4rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 5rem;
+/* COLLAPSES pour la page à propos */
+.collapses-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Pour centrer les collapse horizontalement */
+  margin: 0 12rem 3rem 12rem;
 }
-.collapse {
-    margin-bottom: 20px;
-    width: 100%;
-  }
-  
-  .collapse-header {
-    display: flex;
-    background-color: #ff6060;
-    color: #FFF;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 142.6%; /* 25.668px */
-    border-radius: 5px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .collapse-content {
-    background-color: #F6F6F6;
-    color: #ff6060;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 142.6%; /* 25.668px */
-    padding: 10px;
-    border-radius: 0 0 10px 10px;
-    margin-top: -1px;
-  }
 
-  /* COLLAPSES pour la page à propose */
+.collapse-content ul {
+  list-style: none;
+}
+
+
+
+/* Media Query pour les tablettes à partir de 768px */
+/* @media screen and (min-width: 768px) and (max-width: 1023px) {
   .collapses-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Pour centrer les collapse horizontalement */
-    margin: 0 12rem 3rem 12rem;
+    margin: 0 4rem;
+  }
+} */
+
+/* Media Query pour les mobiles à partir de 375px */
+
+/* Media Query pour les mobiles à partir de 768px */
+@media screen and (max-width: 768px) {
+
+  .collapses-container {
+    margin: 0 4rem; /* Nouveau margin pour les tablettes */
   }
   
-
-  .collapse-content ul {
-    list-style: none;
+  .collapses {
+    margin: 0 4rem; /* Nouveau margin pour les mobiles */
   }
+
+
+  .collapse-header {
+    font-size: 13px; /* Nouvelle font-size pour les mobiles */
+  }
+
+  .collapse-content {
+    font-size: 13px; /* Nouvelle font-size pour les mobiles */
+  }
+
+  .chevron {
+    font-size: 24px; /* Nouvelle taille du chevron pour les mobiles */
+  }
+}
+
+/* Styles communs */
+.collapses {
+  margin: 0 4rem 3rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.collapse {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.collapse-header {
+  display: flex;
+  background-color: #ff6060;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 142.6%; /* 25.668px */
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.collapse-content {
+  background-color: #F6F6F6;
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 142.6%; /* 25.668px */
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  margin-top: -1px;
+}
 
 /* Collapse.css */
 .chevron {
-    font-size: 32px; /* Taille du chevron */
-    transition: transform 0.3s ease; /* Animation de transition pour la rotation */
-  }
-  
-  .rotate {
-    transform: rotate(180deg); /* Rotation de 90 degrés */
-  }
+  font-size: 32px; /* Taille du chevron */
+  transition: transform 0.3s ease; /* Animation de transition pour la rotation */
+}
+
+.rotate {
+  transform: rotate(180deg); /* Rotation de 90 degrés */
+}

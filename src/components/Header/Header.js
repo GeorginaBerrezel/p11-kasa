@@ -15,9 +15,9 @@ const Header = () => {
           <li>
             <NavLink to="/a-propos" activeClassName="active-link">À propos</NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="/test" activeClassName="active-link">Test</NavLink>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>

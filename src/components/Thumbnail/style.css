@@ -1,8 +1,7 @@
 .gallery-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 30px;
   justify-items: center;
   background-color: #f6f6f6;
   padding: 4rem;
@@ -10,47 +9,48 @@
   border-radius: 25px;
 }
 
-
 @media (max-width: 768px) {
-  /* Pour les écrans d'une largeur maximale de 768px */
   .gallery-row {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    background-color: transparent;
+    margin: 1rem;
+    padding: 0;
   }
 }
 
 @media (max-width: 480px) {
-  /* Pour les écrans d'une largeur maximale de 480px */
   .gallery-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    background-color: transparent;
   }
 }
 
 .thumbnail {
   position: relative;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .thumbnail img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-  height: 340px;
-  width: 340px;
-  border-radius: 10px;
-  object-fit: cover;
-  grid-area: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .thumbnail-title {
   position: absolute;
   bottom: 10px;
   left: 10px;
-  margin-left: 10px;
-  width: 150px;
+  max-width: calc(100% - 20px); /* Utiliser une largeur maximale pour éviter que le texte ne dépasse du thumbnail */
 }
 
 .thumbnail h2 {
   color: white;
   font-size: 18px;
   font-weight: 500;
+}
+
+.thumbnail h1 {
+  display: none;
 }

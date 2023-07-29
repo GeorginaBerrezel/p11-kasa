@@ -13,6 +13,12 @@
     height: 223px;
     width: auto;
   }
+
+  @media screen and (max-width: 768px) {
+    .section-home {
+      margin: 1rem; /* Nouvelle largeur du logo pour les mobiles */
+    }
+  }
   
   .section-content {
     text-align: center;

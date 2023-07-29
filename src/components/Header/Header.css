@@ -1,34 +1,61 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4rem;
-    background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  background-color: #ffffff;
+}
+
+/* Styles pour le logo par défaut */
+header img {
+  width: 210.322px;
+  height: 68px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #ff6060;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 142.6%; /* 34.224px */
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 1rem;
   }
-  
-  /* header img {
-    width: 100px;
-    height: 100px;
-  } */
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav li {
-    margin-left: 20px;
-  }
-  
+
   nav a {
-    color: #ff6060;
-    text-decoration: none;
+    font-size: 12px;
   }
-  
-  .active-link {
-    text-decoration: underline;
-    color: #FF6060;
+}
+
+.active-link {
+  text-decoration: underline;
+  color: #FF6060;
+}
+
+/* Media Query pour les mobiles à partir de 375px */
+@media screen and (max-width: 374px) {
+  header img {
+    width: 147px; /* Nouvelle largeur du logo pour les mobiles */
   }
-  
+}
+
+/* Media Query pour les mobiles à partir de 768px */
+@media screen and (max-width: 768px) {
+    header img {
+      width: 147px; /* Nouvelle largeur du logo pour les mobiles */
+    }
+  }
