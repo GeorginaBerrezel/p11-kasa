@@ -1,5 +1,7 @@
 .sheet {
     margin: 0 4rem 3rem 4rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .info-sheet {
@@ -50,3 +52,51 @@
     justify-content: space-between;
 
 }
+
+.star-rating {
+    font-size: 36px;
+}
+
+.host-rating {
+    display: grid;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+/* Vos styles actuels */
+
+@media (max-width: 768px) {
+    .sheet {
+      display: block;
+    }
+  
+    .info-sheet,
+    .host-rating {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  
+    .place-tags {
+      width: 100%;
+    }
+  
+    .tags-rating {
+      margin-top: 1rem;
+    }
+  
+    .host-rating {
+      margin-top: 1rem;
+    }
+
+    .star-rating {
+        font-size: 18px;
+    }
+  
+    .host {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  

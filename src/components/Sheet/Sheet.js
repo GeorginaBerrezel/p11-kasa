@@ -21,7 +21,7 @@ const Sheet = ({ accommodation }) => {
     const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
 
     return (
-        <div className="star-rating" style={{ fontSize: '36px' }}>
+        <div className="star-rating">
         {[...Array(fullStars)].map((_, index) => (
           <i key={`full-${index}`} className="fas fa-star" style={{ color: '#FF6060' }} />
         ))}
@@ -34,32 +34,37 @@ const Sheet = ({ accommodation }) => {
   };
 
   return (
-    <div className="sheet">
-      <div className="info-sheet">
-        <div className="place-sheet">
-            <div className="title-sheet">
-            <h2>{title}</h2>
-            </div>
-            <div className="location-sheet">
-            <p>{location}</p>
-            </div>
+<div className="sheet">
+  <div className="info-sheet">
+    <div className="place-tags">
+      <div className="place-sheet">
+        <div className="title-sheet">
+          <h2>{title}</h2>
         </div>
-        <div className="host">
-          <div className="name-host">
-            <p>{host.name}</p>
-          </div>
-          <div className="picture-host">
-            <img src={host.picture} alt="Host" />
-          </div>
+        <div className="location-sheet">
+          <p>{location}</p>
         </div>
       </div>
-      <div className="rating-sheet">
-        <div className="tags-rating">
+      <div className="tags-rating">
         <p>{renderTags()}</p>
-        </div>
-        {renderStars()} {/* Appel de la fonction pour afficher les étoiles */}
       </div>
     </div>
+  </div>
+  <div className="host-rating">
+    <div className="host">
+      <div className="name-host">
+        <p>{host.name}</p>
+      </div>
+      <div className="picture-host">
+        <img src={host.picture} alt="Host" />
+      </div>
+    </div>
+    <div className="rating-sheet">
+      {renderStars()} {/* Appel de la fonction pour afficher les étoiles */}
+    </div>
+  </div>
+</div>
+
   );
 };
 

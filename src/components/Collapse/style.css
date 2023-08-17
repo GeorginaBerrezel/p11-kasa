@@ -12,40 +12,6 @@
 
 
 
-/* Media Query pour les tablettes à partir de 768px */
-/* @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .collapses-container {
-    margin: 0 4rem;
-  }
-} */
-
-/* Media Query pour les mobiles à partir de 375px */
-
-/* Media Query pour les mobiles à partir de 768px */
-@media screen and (max-width: 768px) {
-
-  .collapses-container {
-    margin: 0 4rem; /* Nouveau margin pour les tablettes */
-  }
-  
-  .collapses {
-    margin: 0 4rem; /* Nouveau margin pour les mobiles */
-  }
-
-
-  .collapse-header {
-    font-size: 13px; /* Nouvelle font-size pour les mobiles */
-  }
-
-  .collapse-content {
-    font-size: 13px; /* Nouvelle font-size pour les mobiles */
-  }
-
-  .chevron {
-    font-size: 24px; /* Nouvelle taille du chevron pour les mobiles */
-  }
-}
-
 /* Styles communs */
 .collapses {
   margin: 0 4rem 3rem 4rem;
@@ -92,4 +58,40 @@
 
 .rotate {
   transform: rotate(180deg); /* Rotation de 90 degrés */
+}
+
+
+/* Media Query pour les tablettes à partir de 768px */
+/* @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .collapses-container {
+    margin: 0 4rem;
+  }
+} */
+
+/* Media Query pour les mobiles à partir de 375px */
+
+/* Media Query pour les mobiles à partir de 768px */
+@media screen and (max-width: 768px) {
+
+  .collapses-container {
+    margin: 0 4rem; /* Nouveau margin pour les tablettes */
+  }
+  
+  .collapses {
+    margin: 0 4rem; /* Nouveau margin pour les mobiles */
+    display: block;
+  }
+
+
+  .collapse-header {
+    font-size: 13px; /* Nouvelle font-size pour les mobiles */
+  }
+
+  .collapse-content {
+    font-size: 13px; /* Nouvelle font-size pour les mobiles */
+  }
+
+  .chevron {
+    font-size: 24px; /* Nouvelle taille du chevron pour les mobiles */
+  }
 }
