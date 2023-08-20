@@ -62,3 +62,9 @@
     font-size: 18px;
     font-weight: 500;
   }
+
+  @media (max-width: 768px) {
+    .carrousel {
+      margin: 0 1rem 3rem 1rem;
+    }
+  }

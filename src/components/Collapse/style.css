@@ -74,11 +74,11 @@
 @media screen and (max-width: 768px) {
 
   .collapses-container {
-    margin: 0 4rem; /* Nouveau margin pour les tablettes */
+    margin: 0 1rem; /* Nouveau margin pour les tablettes */
   }
   
   .collapses {
-    margin: 0 4rem; /* Nouveau margin pour les mobiles */
+    margin: 0 1rem; /* Nouveau margin pour les mobiles */
     display: block;
   }
 

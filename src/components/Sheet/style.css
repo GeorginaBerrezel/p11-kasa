@@ -68,6 +68,7 @@
 @media (max-width: 768px) {
     .sheet {
       display: block;
+      margin: 0 1rem 3rem 1rem;
     }
   
     .info-sheet,
