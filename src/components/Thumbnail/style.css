@@ -1,6 +1,6 @@
 .gallery-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, auto)); /* pour 3 colonnes fixes */
   gap: 30px;
   justify-items: center;
   background-color: #f6f6f6;
@@ -9,9 +9,9 @@
   border-radius: 25px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 978px) {
   .gallery-row {
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, auto)); /* pour 2 colonnes */
     background-color: transparent;
     margin: 1rem;
     padding: 0;
@@ -20,10 +20,11 @@
 
 @media (max-width: 480px) {
   .gallery-row {
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(1, minmax(0, auto)); /* pour 1 colonne */
     background-color: transparent;
   }
 }
+
 
 .thumbnail {
   position: relative;
@@ -45,16 +46,17 @@
 
 .thumbnail img {
   display: block;
-  min-width: 340px;
+  min-width: 240px;
+  max-width: 340px;
   width: 100%;
-  height: auto;
+  height: 240px;
 }
 
 .thumbnail-title {
   position: absolute;
   bottom: 10px;
   left: 10px;
-  max-width: calc(100% - 20px); /* Utiliser une largeur maximale pour éviter que le texte ne dépasse du thumbnail */
+  max-width: calc(100% - 20px);
 }
 
 .thumbnail h2 {

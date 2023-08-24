@@ -36,6 +36,10 @@ nav a {
     padding: 1rem;
   }
 
+  header img {
+    width: 147px; /* Nouvelle largeur du logo pour les mobiles */
+  }
+
   nav a {
     font-size: 12px;
   }
@@ -54,8 +58,8 @@ nav a {
 }
 
 /* Media Query pour les mobiles à partir de 768px */
-@media screen and (max-width: 768px) {
-    header img {
-      width: 147px; /* Nouvelle largeur du logo pour les mobiles */
-    }
+@media screen and (max-width: 370px) {
+  header img {
+    width: 90px; /* Nouvelle largeur du logo pour les mobiles */
+  }
   }
